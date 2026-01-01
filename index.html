@@ -5,120 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>✨ Desk Organization & Study Essentials | Shop on Amazon</title>
 <style>
-/* --- Global Styles --- */
+/* --- Page Styling --- */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     margin: 0;
     padding: 0;
-    color: #fdfdfd;
-    background: linear-gradient(135deg, #1b2431, #2a3b55, #3e2d5b); /* darker gradient */
+    color: #f5f5f5;
 }
 
-/* --- Header --- */
 header {
     text-align: center;
-    padding: 60px 20px;
-    background: rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 50px 20px;
 }
 
 header h1 {
     font-size: 2.8rem;
-    color: #ffd166;
-    margin-bottom: 12px;
-    text-shadow: 1px 2px 6px rgba(0,0,0,0.6);
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #ffffffcc;
+    font-size: 1.3rem;
+    color: #e0e0e0;
 }
 
 /* --- Product Grid --- */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    padding: 30px 50px;
+    padding: 20px 50px;
 }
 
-/* --- Product Cards --- */
+/* --- Product Card --- */
 .product-card {
-    background: #ffffff10; /* semi-transparent card */
-    backdrop-filter: blur(8px);
+    background: #fff;
+    color: #333;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 15px;
+    padding: 15px;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
-/* --- Product Images --- */
+/* --- Product Image --- */
 .product-card img {
     width: 100%;
-    height: 220px;
-    object-fit: contain;
-    border-radius: 12px;
+    height: 250px;
+    object-fit: contain; /* keeps full product visible */
+    background-color: #fdfdfd;
+    border-radius: 10px;
     margin-bottom: 15px;
-    background: #ffffff10;
-    padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product-card img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 209, 102, 0.4);
-}
-
-/* --- Product Titles --- */
+/* --- Product Title --- */
 .product-card h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 10px 0;
-    color: #ffd166;
     min-height: 50px;
 }
 
 /* --- Shop Button --- */
 .shop-button {
-    background: linear-gradient(135deg, #e55548, #b73b2f); /* darker gradient for contrast */
-    color: #fff; /* text stays white */
+    background: #cc3a00;
+    color: #fff;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 12px 22px;
     border-radius: 50px;
     font-weight: bold;
-    transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: background 0.3s;
 }
 
 .shop-button:hover {
-    background: linear-gradient(135deg, #d14035, #9f2b20);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    background: #ff4c3b;
 }
 
 /* --- Footer --- */
 footer {
     text-align: center;
-    padding: 25px 10px;
+    padding: 25px;
     font-size: 0.95rem;
-    color: #ffffffaa;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #ddd;
+    background: #111;
 }
 
-/* --- Responsive --- */
+/* --- Responsive adjustments --- */
 @media (max-width: 600px) {
     .product-grid {
-        padding: 20px 15px;
+        padding: 20px 10px;
     }
+
     header h1 {
         font-size: 2rem;
     }
@@ -136,70 +123,70 @@ footer {
 
     <!-- Product 1 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\TESLYAR%20Wood%20Phone%20Docking%20Station.jpg" alt="TESLYAR Desk Organizer">
+        <img src="images/TESLYAR.jpg" alt="TESLYAR Desk Organizer">
         <h2>TESLYAR Desk Organizer</h2>
         <a href="https://amzn.to/4pk1WCa" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 2 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\OPNICE%20Desk%20Organizer%20and%20Accessories.jpg" alt="OPNICE Desk Organizer">
+        <img src="images/OPNICE.jpg" alt="OPNICE Desk Organizer">
         <h2>OPNICE Desk Organizer</h2>
         <a href="https://amzn.to/4joHSgL" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 3 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\Supeasy%205%20Trays%20Paper%20Organizer.jpg" alt="Supeasy Letter & Mesh Sorter">
+        <img src="images/Supeasy.jpg" alt="Supeasy Letter & Mesh Sorter">
         <h2>Supeasy Letter & Mesh Sorter</h2>
         <a href="https://amzn.to/4jiVCcB" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 4 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\BESIGN%20LS03%20Aluminum%20Laptop%20Stand.jpg" alt="BESIGN Adjustable Laptop Stand">
+        <img src="images/BESIGN.jpg" alt="BESIGN Adjustable Laptop Stand">
         <h2>BESIGN Adjustable Laptop Stand</h2>
         <a href="https://amzn.to/3YQcdLp" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 5 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\gianotter%20Desk%20Organizers%20and%20Accessories.jpg" alt="Gianotter Workspace Organizer">
+        <img src="images/Gianotter1.jpg" alt="Gianotter Workspace Organizer">
         <h2>Gianotter Workspace Organizer</h2>
         <a href="https://amzn.to/49194hX" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 6 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\Vtopmart%2025%20PCS%20Clear%20Plastic%20Drawer%20Organizers%20Set.jpg" alt="Gianotter Multi-Accessory Organizer">
+        <img src="images/Gianotter2.jpg" alt="Gianotter Multi-Accessory Organizer">
         <h2>Gianotter Multi-Accessory Organizer</h2>
         <a href="https://amzn.to/3YSh0vW" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 7 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\Nettbe%2060%20PCS%206%20Inches%20Reusable%20Cable%20Ties.jpg" alt="Vtopmart Versatile Organizer">
+        <img src="images/Vtopmart.jpg" alt="Vtopmart Versatile Organizer">
         <h2>Vtopmart Versatile Organizer</h2>
         <a href="https://amzn.to/49cSURj" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 8 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\Antonki%202%20Pack%20Digital%20Timer%20for%20Kids.jpg" alt="Newlan Adjustable Cable Organizer">
+        <img src="images/Newlan.jpg" alt="Newlan Adjustable Cable Organizer">
         <h2>Newlan Adjustable Cable Organizer</h2>
         <a href="https://amzn.to/3L9P9UU" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 9 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\AT-A-GLANCE%202026%20Desk%20Calendar.jpg" alt="Antonki Study Timer">
+        <img src="images/Antonki.jpg" alt="Antonki Study Timer">
         <h2>Antonki Study Timer</h2>
         <a href="https://amzn.to/3N8R2BI" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
 
     <!-- Product 10 -->
     <div class="product-card">
-        <img src="file:///C:\Users\akram\OneDrive\Desktop\Github\Images\Gritin%2019%20LED%20Rechargeable%20Book%20Light%20for%20Reading%20in%20Bed.jpg" alt="Gritin LED Desk Lamp">
+        <img src="images/Gritin.jpg" alt="Gritin LED Desk Lamp">
         <h2>Gritin LED Desk Lamp</h2>
         <a href="https://amzn.to/45kpdN6" class="shop-button" target="_blank">Shop on Amazon</a>
     </div>
@@ -207,8 +194,8 @@ footer {
 </div>
 
 <footer>
-    Made with ❤️ | All products available on Amazon <br>
-    <small>Disclosure: As an Amazon Associate, I earn from qualifying purchases.</small>
+    Made with ❤️ | All products available on Amazon<br>
+    Disclosure: As an Amazon Associate, I earn from qualifying purchases.
 </footer>
 
 </body>
