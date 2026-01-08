@@ -41,14 +41,15 @@ header p {
 
 /* ---------- GRID ---------- */
 .product-grid {
-  display: grid;
-  grid-auto-flow: column;        /* forces items into one row */
-  grid-auto-columns: 250px;      /* width of each product card */
+  display: flex;            /* switch to flexbox */
+  flex-direction: row;
   gap: 16px;
 
   overflow-x: auto;
   overflow-y: hidden;
   padding: 16px;
+
+  align-items: stretch;     /* keeps one row */
 }
 
 /* ---------- CARD ---------- */
@@ -62,6 +63,8 @@ header p {
         0 20px 40px rgba(0,0,0,0.45),
         inset 0 1px 0 rgba(255,255,255,0.15);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
+    min-width: 250px;         /* critical */
+    flex-shrink: 0;      
 }
 
 .product-card:hover {
@@ -202,4 +205,5 @@ footer {
 
 </body>
 </html>
+
 
